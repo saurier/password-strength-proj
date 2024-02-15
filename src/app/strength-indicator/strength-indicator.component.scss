@@ -1,0 +1,57 @@
+:host {
+	display: flex;
+}
+
+.inner{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 5px;
+}
+
+.meter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+	height: 5px ;
+	overflow: hidden ;
+
+	&__bar {
+		border-radius: 5px ;
+		height: 100% ;
+		transition: width 200ms ease ;
+		width: 73px ;
+    background-color: lightgray ;
+	}
+  &--0 &__bar {
+		background-color: lightgray ;
+	}
+
+  &--1 &__bar {
+		background-color: red ;
+	}
+
+	&--2 &__easy {
+		background-color: red ;
+	}
+
+	&--3 &__easy {
+		background-color: yellow ;
+	}
+
+  &--3 &__medium {
+		background-color: yellow ;
+	}
+
+	&--4  &__easy{
+    background-color: limegreen ;
+  }
+
+  &--4  &__medium{
+    background-color: limegreen ;
+  }
+
+  &--4  &__strong{
+    background-color: limegreen ;
+  }
+}
